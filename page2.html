@@ -1,0 +1,146 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css/hw.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="scripts/hw.js"></script>
+    <div class="container">
+        <div id="page1" style="background-image: url('imgs/bg.png')">
+            <div  class="logo" ><img src="imgs\logo2.png" alt="Mountain View"></div>
+          <!--  <div id="page2" style="background-image: url('imgs/bg.png')">-->
+
+                <div class="page2Container">
+                     <!--<div  class="logoPage2"><img src="imgs\logo.png" alt="Mountain View"></div>-->
+                    <div class="mainTitle">Taking your services to the Cloud.</div>
+                    <div class="subTitle">The easiest way to create a microservice. </div>
+                    <div class="Page2InputsContainer">
+                        <p class="form__row form__element form__element--3 form__row--success">
+                            <label class="field__label" for="apply_servicename">Service name</label>
+                            <input type="text" name="apply_servicename" id="apply_servicename" value="" class="required">
+                            <i class="icon icon_thumbs-down"></i>
+                        </p>
+                        <p class="form__row form__element form__element--3 form__row--success">
+                            <label class="field__label" for="apply_portname">Service port</label>
+                            <input type="text" name="apply_portname" id="apply_portname" value="" class="required">
+                            <i class="icon icon_thumbs-down"></i>
+                        </p>
+                        <button id="changeviewPage2" class="submitButton">Create Service</button>
+                    </div>
+               <!-- </div>-->
+            </div>
+        </div>
+
+        <div id="page3">
+            <div class="page3Title"></div>
+            <div style="display: none">
+                <button id="startProgressBar">start progressbar</button>
+                <button id="stopProgressBar">stop progressbar </button>
+                <button id="finishStep">finishStep </button>
+                <button id="changeviewPage3">changeviewPage3 </button>
+                <p><button id="stopAnimation">Stop</button><button id="startAnimation">Start</button></p>
+            </div>
+
+            <div class="myProgressContainer">
+               <!-- <div class="textProgressBarStep" style="left: 0%; margin-left: -27px;;">Creating Service</div>
+                <div class="textProgressBarStep" style="left: 33%;">Creating Pipeline</div>
+                <div class="textProgressBarStep" style="left: 66%;">Deploying Service</div>
+                <div class="textProgressBarStep" style="left: 100%; margin-left: -42px;">Starting Service</div>-->
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                    <div class="step fillSquere" id="step1"></div>
+                   <!-- <div class="step firstMiddle" id="step2"></div>-->
+                    <div class="step secondMiddle" id="step2"></div>
+                    <div class="step last" id="step3"></div>
+                </div>
+            </div>
+
+            <!--<div class="alert-box finishStep">
+                <div class="alert-box-title">Awesome!!!</div>
+                <div class="alert-box-title-seperation-container"><div class="alert-box-title-seperation"></div></div>
+                <div class="alert-box-content"></div>
+            </div>-->
+            <div id="background-wrap">
+                <div class="animated x1">
+                <div class="cloud"></div>
+            </div>
+
+                <div class="animated x2">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x3">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x4">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x5">
+                    <div class="cloud"></div>
+                </div>
+                <div class="animated x6">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x7">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x8">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x9">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x10">
+                    <div class="cloud"></div>
+                </div>
+                <div class="animated x11">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x12">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x13">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="animated x14">
+                    <div class="cloud"></div>
+                </div>
+            </div>
+               <div class="allscreen">
+                <div class="bootom">
+                    <div class="car">
+                        <img class="carbody" src="imgs\carbody.png" alt="Mountain View">
+                        <div>
+                            <span class="wheelContainer"><img class="wheel " src="imgs\carwheel.png" alt="Mountain View"></span>
+                            <span class="wheelContainer" style="margin-left:110px;"><img class="wheel wheel2" src="imgs\carwheel.png" alt="Mountain View"></span>
+                        </div>
+                    </div>
+                    <div id="" class="road"></div>
+                </div>
+            </div>
+        </div>
+        <div id="page4" style="background-image: url('imgs/bg.png')">
+            <div class="page4Container">
+                <img class="imgConfirmation" src="imgs\confirmation.png" alt="Mountain View">
+                <div class="txtCongratulations mainTitle" style="margin-top: 3%;  margin-left: -70px;">Congratulations!</div>
+                <div class="txtCongratulations subTitle" style="margin-bottom: 50px; margin-left: -68px;">Your microservice is ready.</div>
+                <button class="btnAmazonLink" id="amazonLink">See it now</button>
+               <!-- <a href="http://127.0.0.1:9020/public/hw/getServiceUrl" class="btnAmazonLink">See it now</a>-->
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
